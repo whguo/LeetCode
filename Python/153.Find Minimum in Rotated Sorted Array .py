@@ -14,4 +14,4 @@ class Solution(object):
         return nums[mid]
 
 s = Solution()
-print(s.findMin([2,2,3,4,5,6,7]))
+print(s.findMin([5,6,7,1,2,3,4]))
