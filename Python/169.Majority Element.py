@@ -1,4 +1,4 @@
-#找到一个数组中的主要元素(超过一半的)，假设该元素始终存在
+#找到一个数组中的主要元素(超过一半的)，假设该元素始终存在。
 class Solution(object):
     def majorityElement(self, nums):
         l = len(nums)
