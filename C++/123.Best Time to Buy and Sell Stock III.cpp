@@ -3,14 +3,15 @@
 而且同一天不能进行两次交易。
 */
 /*
-思路：动态规划。
+思路：循环里从下往上看，分别是买第一个，卖第一个，买第二个，卖第二个后的收益。
+从下往上是为了不让下面的更改影响上面。
  */
+
 
 #include <iostream>
 #include <vector>
 #include <windows.h>
 #include <windef.h>
-#include <climits>
 using namespace std;
 
 class Solution {

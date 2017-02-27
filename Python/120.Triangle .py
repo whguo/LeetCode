@@ -1,4 +1,4 @@
-#一个三角从上到下的一条路径，求路径数值之和(没移动一行，只能跳到相邻列)
+#一个三角从上到下的一条路径，求路径数值之和(每移动一行，只能跳到相邻列)
 class Solution(object):
     def minimumTotal(self, triangle):
         l = len(triangle)
