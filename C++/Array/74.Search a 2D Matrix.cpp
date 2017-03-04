@@ -9,8 +9,7 @@ class Solution {
 public:
 	bool searchMatrix(vector<vector<int>>& matrix, int target) {
 		int length = matrix.size();
-		if(length==0)	return false;
-		if(matrix[0].size()==0)	return false;
+		if(length==0 || matrix[0].size()==0)	return false;
         int left = 0,right = length-1,mid,row;
         while(left<right)
         {
