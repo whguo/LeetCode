@@ -7,10 +7,6 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-bool cmp(int a, int b)
-{
-	return a < b;
-}
 
 class Solution {
 public:
@@ -20,7 +16,7 @@ public:
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
         mycandidates = candidates, mytarget = target;
-        sort(mycandidates.begin(), mycandidates.end(), cmp);
+        sort(mycandidates.begin(), mycandidates.end());
 		vector<int> empty;
 		dfs(0, 0, empty);
 		return result;

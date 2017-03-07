@@ -9,11 +9,6 @@
 #include <algorithm>
 using namespace std;
 
-bool cmp(int a, int b)
-{
-	return a < b;
-}
-
 class Solution {
 public:
 	vector<int> mycandidates;
@@ -22,7 +17,7 @@ public:
 public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         mycandidates = candidates, mytarget = target;
-        sort(mycandidates.begin(), mycandidates.end(), cmp);
+        sort(mycandidates.begin(), mycandidates.end());
 		vector<int> empty;
 		dfs(-1, 0, empty);
 		return result;
