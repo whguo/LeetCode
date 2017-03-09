@@ -4,6 +4,7 @@
 /*
 思路：DFS超时。
 借用3Sum的方法。多一层循环，每一层把重复的跳过。
+可以进行剪枝。
 */
 #include <iostream>
 #include <vector>
@@ -19,6 +20,9 @@ public:
 		sort(nums.begin(), nums.end());
 		for (p = 0; p < length - 3; ++p)
 		{
+			//剪枝
+			if(nums[p]+nums[p+1]+nums[p+2]+nums[p+3]>target)	break;
+			if(nums[p]+nums[length-3]+nums[length-2]+nums[length-1]<target)	continue;
 			for (k = p+1; k < length - 2; ++k)
 			{
 				int tar = target-nums[k]-nums[p];
