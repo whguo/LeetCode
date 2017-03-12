@@ -17,19 +17,15 @@ public:
     		result.insert(nums[i]);
     	}
     	return nums.size()!=result.size();
+
+    	//一行就可以，vector直接转成set。
+    	//return nums.size() > set<int>(nums.begin(), nums.end()).size(); 
     }
 };
 
 int main()
 {
 	Solution s;
-	vector<int> nums;
-	nums.push_back(2);
-	nums.push_back(1);
-	nums.push_back(1);
-	nums.push_back(4);
-	nums.push_back(1);
-	nums.push_back(2);
-	nums.push_back(2);
+	vector<int> nums{2,1,1,4,1,2,2};
 	cout<<s.containsDuplicate(nums)<<endl;
 }
