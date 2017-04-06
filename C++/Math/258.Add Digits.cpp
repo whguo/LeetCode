@@ -15,7 +15,6 @@
 又因为 x % z % z = x % z，因此结果为 (num - 1) % 9 + 1，只模除9一次，并将模除后的结果加一返回。
  */
 #include <iostream>
-#include <cstring>
 using namespace std;
 
 class Solution {
