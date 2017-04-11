@@ -3,7 +3,7 @@
 如何不使用循环做？
 */
 /*
-思路：
+思路：转化为Log。
 */
 #include <iostream>
 using namespace std;
