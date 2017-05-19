@@ -8,6 +8,9 @@
     27 -> AA
     28 -> AB 
 */
+/*
+思路：本质是26进制。但是没有0，最小是1，所以要先对数减1然后求模。
+ */
 
 #include <iostream>
 #include <cstring>
