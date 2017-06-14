@@ -3,25 +3,15 @@
 */
 #include <iostream>
 #include <vector>
-#include <windows.h>
-#include <windef.h>
 using namespace std;
 
 class Solution {
 public:
 	int missingNumber(vector<int>& nums) {
-
-		//位操作
-		int length = nums.size(),result = length;
-		for(int i=0; i < length; ++i)
+		int n = nums.size(),result = n;
+		for(int i=0; i < n; ++i)
 			result = result ^ nums[i] ^ i;
 		return result;
-
-		/*求和方法
-        int x = 0 , n = nums.size();
-        for(int num:nums)
-        	x += num;
-        return n*(n+1)/2-x;*/
     }
 };
 int main()
