@@ -29,7 +29,7 @@ public:
         		if(nums[j] < nums[i])
         			maxsub = max(maxsub,dp[j]);
         	}
-        	dp[i] = (maxsub==0)? 1:maxsub+1;
+        	dp[i] = maxsub+1;
         	result = max(result,dp[i]);
         }
         return result;
